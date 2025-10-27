@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shriya Trivedi | Digital Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="logo" href="index.html">Shriya Trivedi</a>
+      <nav>
+        <ul class="nav">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container fade-in" id="hero">
+      <div class="hero-grid">
+        <!-- Left side: Profile image -->
+        <div class="hero-photo">
+          <img src="assets/profile.jpg" alt="Shriya Trivedi">
+        </div>
+
+        <!-- Right side: Text and buttons -->
+        <div class="hero-content">
+          <h1>Hi, I'm <span class="name-highlight">Shriya Trivedi</span></h1>
+          <p class="subtitle">LEARNER | EXPLORER | CREATOR</p>
+          <p class="lead">
+            I believe life becomes beautiful when you learn, explore, and express freely.
+            I love staying curious, taking on new experiences, and growing through every challenge.
+            Teaching and learning go hand in hand for me — I create spaces where ideas flow and creativity shines.
+          </p>
+
+          <div class="hero-buttons">
+            <a class="btn" href="about.html">View My Work</a>
+            <a class="btn ghost" href="assets/Shriya_Trivedi_CV.pdf" download>Download My CV</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Connect with me on 
+        <a href="https://www.linkedin.com/in/shriya-trivedi-7806b2385?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">LinkedIn</a> |
+        <a href="mailto:shriyatrivedi0@gmail.com">Gmail</a> |
+        <a href="tel:+917388462347">+91 7388462347</a>
+      </p>
+      <p>© <span id="year"></span> Shriya Trivedi. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

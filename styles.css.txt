@@ -1,0 +1,260 @@
+:root {
+  --pink-light: #fce8f3;
+  --pink-dark: #eba7c0;
+  --text-color: #333;
+  --bg-color: #fff;
+  --muted: #6b6b6b;
+  --font: 'Poppins', sans-serif;
+  --max-width: 1100px;
+  --radius: 12px;
+  --shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font);
+  color: var(--text-color);
+  background: var(--bg-color);
+  line-height: 1.6;
+}
+
+/* Header */
+.site-header {
+  background: linear-gradient(180deg, rgba(252,232,243,0.9), rgba(248,215,224,0.6));
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  backdrop-filter: blur(6px);
+}
+
+.nav-wrap {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.nav a:hover, .nav a.active {
+  color: var(--pink-dark);
+}
+
+/* Hero Section */
+.hero {
+  padding: 60px 0;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero-photo img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: var(--radius);
+  border: 8px solid var(--pink-light);
+  box-shadow: var(--shadow);
+}
+
+.hero-content h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.name-highlight {
+  color: var(--pink-dark);
+}
+
+.subtitle {
+  color: var(--pink-dark);
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.lead {
+  color: var(--muted);
+  margin-bottom: 25px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: var(--pink-dark);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  margin-right: 10px;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background: #d68aa5;
+  transform: translateY(-2px);
+}
+
+.btn.ghost {
+  background: transparent;
+  color: var(--pink-dark);
+  border: 2px solid var(--pink-dark);
+}
+
+.btn.ghost:hover {
+  background: var(--pink-light);
+}
+
+/* About */
+.about-section, .education-section, .contact-section {
+  padding: 60px 0;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.about-photo img {
+  width: 100%;
+  border-radius: var(--radius);
+  border: 8px solid var(--pink-light);
+  box-shadow: var(--shadow);
+}
+
+.about-content h1 {
+  margin-bottom: 15px;
+  color: var(--pink-dark);
+}
+
+.about-content h3 {
+  margin-top: 25px;
+  color: var(--pink-dark);
+}
+
+/* Education */
+.education-list {
+  margin-top: 20px;
+}
+
+.edu-item {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-left: 4px solid var(--pink-dark);
+  background: var(--pink-light);
+  border-radius: var(--radius);
+}
+
+.skills-list {
+  margin-top: 10px;
+  list-style: disc;
+  padding-left: 30px;
+  color: var(--muted);
+}
+
+/* Contact */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+  max-width: 600px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: var(--font);
+}
+
+.form-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.contact-info {
+  margin-top: 40px;
+}
+
+.contact-links {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-links li {
+  margin-bottom: 8px;
+}
+
+/* Footer */
+.site-footer {
+  background: #fff;
+  border-top: 1px solid #eee;
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 60px;
+  color: var(--muted);
+}
+
+.site-footer a {
+  color: var(--pink-dark);
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Animations */
+.fade-in {
+  opacity: 0;
+  transform: translateY(25px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .hero-grid, .about-grid {
+    grid-template-columns: 1fr;
+  }
+  .hero-photo img {
+    max-width: 100%;
+    margin: 0 auto 20px;
+  }
+}
