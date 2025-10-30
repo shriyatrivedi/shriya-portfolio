@@ -252,5 +252,35 @@ img {
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   margin-bottom: 15px;
 }
+  /* Right Arrow Styling */
+.next-arrow {
+  text-align: right;
+  margin-top: 40px;
+  padding-right: 50px;
 }
+
+.next-arrow a {
+  font-size: 2.5rem;
+  color: var(--pink-dark);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+  animation: slideRight 2s infinite;
+}
+
+.next-arrow a:hover {
+  color: var(--pink-light);
+  transform: translateX(10px);
+}
+
+@keyframes slideRight {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(8px);
+  }
+}
+}
+
 
