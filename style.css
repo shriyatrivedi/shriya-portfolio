@@ -353,8 +353,24 @@ img {
     opacity: 1;
   }
 }
+  /* ===== BACK ARROW STYLE ===== */
+.back-arrow {
+  position: fixed;
+  top: 25px;
+  left: 25px;
+  font-size: 1.8rem;
+  color: var(--pink-accent);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.back-arrow:hover {
+  color: var(--pink-dark);
+  transform: translateX(-5px);
 }
 }
+}
+
 
 
 
