@@ -5,29 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact | Shriya Trivedi</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
+
 <body>
   <header>
+    <a href="menu.html" class="back-arrow"><i class="fas fa-arrow-left"></i></a>
     <h1>Contact Me</h1>
   </header>
 
-  <section class="content">
-    <p>If you'd like to get in touch, feel free to connect with me:</p>
+  <section class="contact-section container fade-in">
+    <p>You can reach out to me directly through this form or connect via Email, LinkedIn, or Instagram!</p>
 
-    <div class="contact-links">
-      <a href="mailto:shriyatrivedi0@gmail.com"><i class="fas fa-envelope"></i> shriyatrivedi0@gmail.com</a>
-      <a href="https://www.linkedin.com/in/shriya-trivedi-7806b2385"><i class="fab fa-linkedin"></i> LinkedIn</a>
-      <a href="https://www.instagram.com/shriyuuxx_/"><i class="fab fa-instagram"></i> Instagram</a>
+    <div class="contact-info">
+      <p><i class="fas fa-envelope"></i> <strong>Email:</strong> <a href="mailto:shriyatrivedi09@gmail.com">shriyatrivedi09@gmail.com</a></p>
+      <p><i class="fab fa-linkedin"></i> <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/shriya-trivedi-7806b2385" target="_blank">linkedin.com/in/shriya-trivedi</a></p>
+      <p><i class="fab fa-instagram"></i> <strong>Instagram:</strong> <a href="https://www.instagram.com/shriyuuxx_/" target="_blank">@shriyuuxx_</a></p>
     </div>
+
+    <form action="https://formspree.io/f/mgvpoyjq" method="POST" class="contact-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+      <button type="submit" class="btn">Send Message</button>
+    </form>
   </section>
 
   <footer>
     <div class="footer-icons">
-      <a href="mailto:shriyatrivedi0@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="mailto:shriyatrivedi09@gmail.com"><i class="fas fa-envelope"></i></a>
       <a href="https://www.linkedin.com/in/shriya-trivedi-7806b2385"><i class="fab fa-linkedin"></i></a>
       <a href="https://www.instagram.com/shriyuuxx_/"><i class="fab fa-instagram"></i></a>
     </div>
-    <p>&copy; 2025 Shriya Trivedi</p>
+    <p>&copy; 2025 Shriya Trivedi | Let's connect and collaborate 🤝</p>
   </footer>
 
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
