@@ -199,4 +199,58 @@ section.page h2 {
     width: 180px;
     height: 180px;
   }
+  /* Fix overlapping buttons */
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 15px 8px;
+  transition: all 0.3s ease;
 }
+
+/* Fix for mobile view */
+.hero-content {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Add extra space below buttons */
+.hero-content p.lead {
+  margin-bottom: 25px;
+}
+
+/* Fix overlap in about page */
+section {
+  padding: 80px 0;
+}
+
+/* Ensure everything looks clean and centered */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+  body {
+  background-color: #fff;
+  color: #333;
+  line-height: 1.7;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+  color: #222;
+  letter-spacing: 0.5px;
+}
+
+img {
+  border-radius: 50%;
+  max-width: 180px;
+  height: auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin-bottom: 15px;
+}
+}
+
