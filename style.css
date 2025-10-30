@@ -310,5 +310,26 @@ form button:hover {
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   animation: fadeIn 0.6s ease;
 }
+   /* ------------------------------
+   BACK ARROW (ENHANCED)
+------------------------------ */
+.back-arrow {
+  display: inline-block;
+  text-decoration: none;
+  color: #b76e79;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 15px 0;
+  transition: all 0.3s ease;
+  position: absolute;
+  top: 25px;
+  left: 25px;
 }
+
+.back-arrow:hover {
+  color: #9b5d68;
+  transform: translateX(-5px);
+}
+}
+
 
