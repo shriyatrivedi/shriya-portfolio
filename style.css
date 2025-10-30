@@ -192,6 +192,13 @@ ul li {
   color: #8e4e5f;
   transform: scale(1.03);
 }
+.divider {
+  border: none;
+  height: 1px;
+  background-color: #e3c7ce;
+  width: 80%;
+  margin: 25px auto;
+}
 
 /* ---------- FOOTER ---------- */
 footer {
@@ -244,3 +251,4 @@ footer p {
     6em;
   }
 }
+
