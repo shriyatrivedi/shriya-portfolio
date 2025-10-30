@@ -1,244 +1,209 @@
-:root {
-  --pink-light: #fce8f3;
-  --pink-dark: #eb7ac0;
-  --text-color: #333;
-  --bg-color: #fff;
-  --muted: #6b6b6b;
-  --font: "Poppins", sans-serif;
-  --shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-}
-
-/* ============ GENERAL RESET ============ */
+/* ---------- GENERAL RESET ---------- */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: var(--font);
+  font-family: "Poppins", sans-serif;
 }
 
+/* ---------- BODY & GLOBAL STYLING ---------- */
 body {
-  background: linear-gradient(to bottom, #ffe6f2, #fff);
-  color: var(--text-color);
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-/* ============ CONTAINERS ============ */
-.container {
-  width: 90%;
-  max-width: 1000px;
-  margin: 50px auto;
+  background-color: #faf9f9;
+  color: #2b2b2b;
   text-align: center;
+  line-height: 1.8;
 }
 
-/* ============ HERO SECTION ============ */
-.hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+/* ---------- HEADINGS ---------- */
+header {
+  padding: 50px 20px 20px;
 }
 
-.hero-photo img {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  border: 5px solid var(--pink-light);
-  object-fit: cover;
-  margin-bottom: 20px;
-  box-shadow: var(--shadow);
-}
-
-.hero-content h1 {
-  font-size: 2.2em;
-  margin-bottom: 10px;
-  color: var(--text-color);
-}
-
-.name-highlight {
-  color: var(--pink-dark);
+header h1 {
+  font-size: 2.5em;
+  color: #b56576; /* Muted mauve */
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 .subtitle {
-  font-weight: 600;
-  color: var(--muted);
-  letter-spacing: 1px;
-  margin-bottom: 10px;
+  color: #d78aa1;
+  font-size: 1.1em;
+  margin-top: 8px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
-.lead {
-  max-width: 650px;
-  margin: 0 auto 20px;
-  line-height: 1.6;
+/* ---------- SECTIONS ---------- */
+section {
+  padding: 30px 20px;
+  max-width: 900px;
+  margin: auto;
 }
 
-/* ============ BUTTONS ============ */
-.btn-group {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  flex-wrap: wrap;
-  margin-top: 15px;
+/* ---------- TEXT CONTENT ---------- */
+.content p {
+  margin-bottom: 20px;
+  font-size: 1.05em;
+  color: #444;
+}
+
+/* ---------- BUTTONS ---------- */
+.buttons {
+  margin-top: 20px;
 }
 
 .btn {
-  background-color: var(--pink-dark);
-  color: white;
-  padding: 10px 20px;
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 25px;
   border-radius: 25px;
+  background-color: #b56576;
+  color: #fff;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 500;
   transition: all 0.3s ease;
-  border: none;
+  box-shadow: 0 3px 10px rgba(181, 101, 118, 0.3);
 }
 
 .btn:hover {
-  background-color: #d76bac;
-  transform: translateY(-3px);
+  background-color: #a45466;
+  box-shadow: 0 5px 15px rgba(181, 101, 118, 0.4);
+  transform: translateY(-2px);
 }
 
-.btn.ghost {
-  background: transparent;
-  color: var(--pink-dark);
-  border: 2px solid var(--pink-dark);
-}
-
-.btn.ghost:hover {
-  background-color: var(--pink-light);
-}
-
-/* ============ ARROWS ============ */
-.back-arrow,
-a.btn i {
-  color: var(--pink-dark);
-}
-
-.back-arrow {
-  font-size: 1.6em;
+/* ---------- ARROWS ---------- */
+.arrow {
+  display: inline-block;
+  margin-top: 40px;
+  font-size: 2.2em;
+  color: #b56576;
   text-decoration: none;
-  position: absolute;
-  top: 25px;
-  left: 30px;
   transition: 0.3s ease;
 }
 
-.back-arrow:hover {
-  transform: translateX(-5px);
+.arrow:hover {
+  color: #8e4e5f;
+  transform: translateX(5px);
 }
 
-.btn i {
-  margin-left: 8px;
-  font-size: 1.1em;
-  vertical-align: middle;
+/* Back Arrow (for menu/education pages) */
+.arrow.back {
+  position: fixed;
+  top: 25px;
+  left: 25px;
+  font-size: 1.8em;
+  transform: rotate(180deg);
 }
 
-/* Make arrow on home page larger and right-aligned */
-.hero-content .btn.ghost i {
-  font-size: 1.3em;
-}
-
-/* ============ MENU PAGE ============ */
-.menu-section {
-  text-align: center;
-  margin-top: 100px;
-}
-
-.menu-section h1 {
-  font-size: 2em;
-  color: var(--text-color);
-  margin-bottom: 40px;
-}
-
-.menu-links {
+/* ---------- MENU PAGE ---------- */
+.menu {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
+  align-items: center;
+  height: 70vh;
 }
 
-.menu-links .btn {
-  background-color: var(--pink-dark);
-  color: white;
-  border: none;
-  width: 150px;
+.menu .btn {
+  width: 220px;
+  margin: 12px;
 }
 
-.menu-links .btn:hover {
-  background-color: #d76bac;
-}
-
-/* ============ ABOUT & EDUCATION & CONTACT ============ */
-section h1 {
-  color: var(--pink-dark);
-  margin-bottom: 20px;
-}
-
-section p, section ul {
-  color: var(--text-color);
-  line-height: 1.6;
-  margin-bottom: 15px;
+/* ---------- LISTS ---------- */
+ul {
+  list-style-type: none;
+  margin: 15px 0;
 }
 
 ul li {
-  list-style-type: none;
-  margin-bottom: 10px;
+  background: #fff;
+  margin: 8px auto;
+  padding: 12px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  max-width: 600px;
+  text-align: left;
 }
 
-/* ============ FOOTER ============ */
-.site-footer {
-  margin-top: auto;
-  background-color: var(--pink-light);
-  text-align: center;
-  padding: 25px 10px;
-  box-shadow: var(--shadow);
+/* ---------- SKILLS SECTION ---------- */
+.skills li {
+  display: inline-block;
+  background-color: #f4d7dd;
+  color: #2b2b2b;
+  margin: 6px;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 0.95em;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
 }
 
-.footer-container p {
-  color: var(--muted);
-  margin: 10px 0;
+/* ---------- CONTACT PAGE ---------- */
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.contact-links a {
+  text-decoration: none;
+  color: #b56576;
+  font-size: 1.05em;
+  transition: color 0.3s ease;
+}
+
+.contact-links a:hover {
+  color: #8e4e5f;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  background-color: #f6eef0;
+  padding: 25px 0;
+  margin-top: 50px;
 }
 
 .footer-icons {
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  margin: 10px 0;
+  margin-bottom: 10px;
 }
 
 .footer-icons a {
+  color: #b56576;
+  margin: 0 12px;
   font-size: 1.4em;
-  color: var(--pink-dark);
   transition: 0.3s ease;
 }
 
 .footer-icons a:hover {
-  color: #c85fa3;
-  transform: translateY(-3px);
+  color: #8e4e5f;
+  transform: scale(1.1);
 }
 
-/* ============ PAGE TRANSITIONS ============ */
-.fade-in {
-  animation: fadeIn 0.8s ease forwards;
-  opacity: 0;
+footer p {
+  font-size: 0.9em;
+  color: #555;
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-/* ============ RESPONSIVE ============ */
+/* ---------- RESPONSIVE DESIGN ---------- */
 @media (max-width: 768px) {
-  .hero-photo img {
-    width: 140px;
-    height: 140px;
+  header h1 {
+    font-size: 2em;
   }
-  .btn-group {
-    flex-direction: column;
-    align-items: center;
+
+  .btn {
+    padding: 8px 18px;
+    font-size: 0.95em;
   }
-  .menu-links {
-    flex-direction: column;
+
+  .skills li {
+    display: block;
+    max-width: 280px;
+    margin: 8px auto;
   }
-  .
+
+  .arrow.back {
+    font-size: 1.6em;
+  }
+}
