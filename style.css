@@ -314,7 +314,25 @@ footer p {
   transform: translateY(-3px);
   box-shadow: 0 6px 15px rgba(181, 101, 118, 0.4);
 }
+  /* -------- Profile Photo Styling (Fix) -------- */
+.profile-photo {
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #f1dbe2;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 20px auto 25px auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.profile-photo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(181, 101, 118, 0.3);
+}
+}
+
 
 
 
