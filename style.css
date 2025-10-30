@@ -331,7 +331,20 @@ footer p {
   transform: scale(1.05);
   box-shadow: 0 6px 20px rgba(181, 101, 118, 0.3);
 }
+  .back-arrow {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  font-size: 22px;
+  color: #a25c74;
+  text-decoration: none;
+  transition: transform 0.2s ease;
 }
+.back-arrow:hover {
+  transform: translateX(-4px);
+}
+}
+
 
 
 
