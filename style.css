@@ -6,12 +6,25 @@
   font-family: "Poppins", sans-serif;
 }
 
-/* ---------- BODY & GLOBAL STYLING ---------- */
+/* ---------- BODY & GLOBAL ---------- */
 body {
   background-color: #faf9f9;
   color: #2b2b2b;
   text-align: center;
   line-height: 1.8;
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Smooth page transitions */
+a {
+  transition: all 0.3s ease-in-out;
 }
 
 /* ---------- HEADINGS ---------- */
@@ -21,7 +34,7 @@ header {
 
 header h1 {
   font-size: 2.5em;
-  color: #b56576; /* Muted mauve */
+  color: #b56576;
   font-weight: 600;
   letter-spacing: 1px;
 }
@@ -68,7 +81,7 @@ section {
 
 .btn:hover {
   background-color: #a45466;
-  box-shadow: 0 5px 15px rgba(181, 101, 118, 0.4);
+  box-shadow: 0 0 15px rgba(181, 101, 118, 0.6);
   transform: translateY(-2px);
 }
 
@@ -76,7 +89,7 @@ section {
 .arrow {
   display: inline-block;
   margin-top: 40px;
-  font-size: 2.2em;
+  font-size: 2.4em;
   color: #b56576;
   text-decoration: none;
   transition: 0.3s ease;
@@ -84,16 +97,21 @@ section {
 
 .arrow:hover {
   color: #8e4e5f;
-  transform: translateX(5px);
+  transform: translateX(6px);
 }
 
-/* Back Arrow (for menu/education pages) */
+/* Back Arrow */
 .arrow.back {
   position: fixed;
   top: 25px;
   left: 25px;
   font-size: 1.8em;
   transform: rotate(180deg);
+  transition: 0.3s ease;
+}
+
+.arrow.back:hover {
+  transform: rotate(180deg) translateX(5px);
 }
 
 /* ---------- MENU PAGE ---------- */
@@ -106,8 +124,18 @@ section {
 }
 
 .menu .btn {
-  width: 220px;
+  width: 240px;
   margin: 12px;
+  font-size: 1.05em;
+  background-color: #b56576;
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+.menu .btn:hover {
+  background-color: #a45466;
+  box-shadow: 0 0 20px rgba(181, 101, 118, 0.6);
+  transform: scale(1.05);
 }
 
 /* ---------- LISTS ---------- */
@@ -136,6 +164,12 @@ ul li {
   border-radius: 20px;
   font-size: 0.95em;
   box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.skills li:hover {
+  background-color: #f0c6cf;
+  transform: translateY(-2px);
 }
 
 /* ---------- CONTACT PAGE ---------- */
@@ -156,6 +190,7 @@ ul li {
 
 .contact-links a:hover {
   color: #8e4e5f;
+  transform: scale(1.03);
 }
 
 /* ---------- FOOTER ---------- */
@@ -163,6 +198,7 @@ footer {
   background-color: #f6eef0;
   padding: 25px 0;
   margin-top: 50px;
+  animation: fadeIn 1.2s ease-in;
 }
 
 .footer-icons {
@@ -186,7 +222,7 @@ footer p {
   color: #555;
 }
 
-/* ---------- RESPONSIVE DESIGN ---------- */
+/* ---------- RESPONSIVE ---------- */
 @media (max-width: 768px) {
   header h1 {
     font-size: 2em;
@@ -204,6 +240,7 @@ footer p {
   }
 
   .arrow.back {
-    font-size: 1.6em;
+    font-size: 1.
+    6em;
   }
 }
