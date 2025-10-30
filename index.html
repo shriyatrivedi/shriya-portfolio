@@ -4,24 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shriya Trivedi | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
-  
-  <body>
-  <header class="site-header">
-    <div class="container nav-wrap">
-      <a class="logo" href="index.html">Shriya Trivedi</a>
-      <nav>
-        <ul class="nav">
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="education.html">Education</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
+<body>
   <main>
     <section class="hero container fade-in">
       <div class="hero-grid">
@@ -36,32 +21,32 @@
             I’m someone who loves to stay curious, take on new experiences, and grow through every challenge.
             I find joy in connecting with people, sharing knowledge, and making every moment meaningful.
           </p>
-          <a href="shriya trivedi cv.pdf" class="btn" download>Download My CV</a>
-          <a href="about.html" class="btn ghost">Know More</a>
-    <!-- Right Arrow for Navigation -->
-<div class="arrow-container">
-  <a href="menu.html" class="right-arrow">→</a>
-</div>
+          <div class="buttons">
+            <a href="shriya trivedi cv.pdf" class="btn" download>Download My CV</a>
+          </div>
         </div>
       </div>
     </section>
+
+    <!-- Right Arrow Navigation -->
+    <div class="arrow-container">
+      <a href="menu.html" class="right-arrow">→</a>
+    </div>
   </main>
 
   <footer class="site-footer">
     <div class="container">
       <p>Connect with me on 
-        <a href="mailto:shriyatrivedi0@gmail.com">Email</a> |
-        <a href="https://www.linkedin.com/in/shriya-trivedi-7806b2385?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">LinkedIn</a>
+        <a href="mailto:shriyatrivedi09@gmail.com">Email</a> | 
+        <a href="https://www.linkedin.com/in/shriya-trivedi-7806b2385">LinkedIn</a>
       </p>
       <p>© <span id="year"></span> Shriya Trivedi. All rights reserved.</p>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+    // Dynamically update the year
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
-
-
-
-
-
-
+</html>
