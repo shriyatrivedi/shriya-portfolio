@@ -408,7 +408,22 @@ body.fade-in-active {
   transform: translateX(-20px);
 }
 }
+.arrow-right {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  font-size: 40px;
+  color: #ff7eb9;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
+
+.arrow-right:hover {
+  transform: translateX(8px);
+  color: #ff4fa3;
+}
+}
+
 
 
 
