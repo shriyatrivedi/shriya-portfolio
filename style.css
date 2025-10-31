@@ -330,6 +330,39 @@ form button:hover {
   color: #9b5d68;
   transform: translateX(-5px);
 }
+   /* --- Welcome Heading Styles --- */
+.welcome-heading {
+    font-family: "Dancing Script", cursive;
+    font-size: 2.2rem;
+    color: #6b2d39;
+    margin-bottom: 10px;
+    text-align: center;
+    letter-spacing: 1px;
 }
+
+.name-heading {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    color: #442029;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* --- Arrow Styling Update --- */
+.arrow-link {
+    font-size: 2rem; /* make arrow big and visible */
+    color: #8c3a4a;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.arrow-link:hover {
+    color: #6b2d39;
+    transform: translateX(8px);
+}
+}
+
 
 
