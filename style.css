@@ -416,7 +416,37 @@ form button:hover {
     color: #5c2830;
     transform: translateX(-8px);
 }
+   /* --- About Page Styling --- */
+.about-header {
+  position: relative;
+  text-align: center;
+  padding-top: 80px;
 }
+
+.about-heading {
+  font-size: 2rem;
+  color: #5c2830;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+/* --- Arrow Consistency (About Page) --- */
+.back-arrow {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  font-size: 2rem;
+  color: #8c3a4a;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.back-arrow:hover {
+  color: #5c2830;
+  transform: translateX(-8px);
+}
+}
+
 
 
 
