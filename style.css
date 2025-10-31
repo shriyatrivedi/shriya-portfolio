@@ -362,7 +362,62 @@ form button:hover {
     color: #6b2d39;
     transform: translateX(8px);
 }
+   /* --- Menu Page Styling --- */
+.menu-section {
+    text-align: center;
+    padding: 60px 20px;
+    min-height: 100vh;
+    position: relative;
 }
+
+.menu-heading {
+    font-size: 2rem;
+    color: #5c2830;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.menu-links {
+    display: flex;
+    flex-direction: column; /* makes buttons stack vertically */
+    align-items: center;
+    gap: 20px;
+}
+
+.menu-btn {
+    background-color: #a45a6a;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    width: 200px;
+}
+
+.menu-btn:hover {
+    background-color: #8b3e52;
+    transform: translateY(-2px);
+}
+
+/* --- Back Arrow Styling --- */
+.back-arrow {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    font-size: 2rem; /* larger and visible */
+    color: #8c3a4a;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.back-arrow:hover {
+    color: #5c2830;
+    transform: translateX(-8px);
+}
+}
+
 
 
 
