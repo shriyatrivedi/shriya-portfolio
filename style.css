@@ -677,7 +677,23 @@ form button:hover {
   background-color: #9e4d61;
   transform: scale(1.05);
 }
+   .back-arrow {
+  font-size: 28px;         /* Bigger like the Education page */
+  font-weight: bold;       /* Makes it thicker */
+  color: #8b3a4b;          /* Match your theme color */
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 15px;       /* Add spacing from the left edge */
+  margin-top: 15px;        /* Add spacing from the top */
 }
+
+.back-arrow:hover {
+  color: #b2556d;          /* Slightly lighter on hover */
+  transform: scale(1.1);
+  transition: 0.2s ease;
+}
+}
+
 
 
 
