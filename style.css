@@ -647,7 +647,38 @@ form button:hover {
   transform: translateX(-5px);
   color: #b35a6f;
 }
+   /* Remove the small arrow */
+.arrow {
+  display: none;
 }
+
+/* Center align Know More and Download CV buttons */
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* Style for the buttons to make them bold and visible */
+.button-group .btn {
+  background-color: #b45c72; /* same rose shade */
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 22px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* Add hover effect for smoothness */
+.button-group .btn:hover {
+  background-color: #9e4d61;
+  transform: scale(1.05);
+}
+}
+
 
 
 
