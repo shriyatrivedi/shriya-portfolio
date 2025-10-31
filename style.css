@@ -671,7 +671,16 @@ form button:hover {
   text-decoration: none;
   transition: all 0.3s ease;
 }
+.button-container {
+  display: flex;
+  justify-content: center;   /* Centers the buttons horizontally */
+  gap: 20px;                 /* Adds space between the buttons */
+  margin-top: 20px;
+}
 
+.button-container a {
+  text-decoration: none;
+}
 /* Add hover effect for smoothness */
 .button-group .btn:hover {
   background-color: #9e4d61;
@@ -693,6 +702,7 @@ form button:hover {
   transition: 0.2s ease;
 }
 }
+
 
 
 
