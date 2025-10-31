@@ -560,7 +560,78 @@ form button:hover {
 .send-btn:hover {
   background-color: #5c2830;
 }
+   /* --- Home Page Styling --- */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
 }
+
+.welcome-text {
+  font-size: 2rem;
+  font-family: "Dancing Script", cursive;
+  color: #5c2830;
+  margin-bottom: 30px;
+  animation: fadeInDown 1s ease;
+}
+
+.hero-photo img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #b78a95;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.hero-photo img:hover {
+  transform: scale(1.05);
+}
+
+.hero-name {
+  font-size: 1.8rem;
+  color: #5c2830;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.hero-tagline {
+  font-size: 1rem;
+  color: #8c3a4a;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.intro {
+  font-size: 1rem;
+  color: #333;
+  max-width: 600px;
+  margin: 0 auto 25px;
+  line-height: 1.6;
+}
+
+.know-more-btn {
+  background-color: #8c3a4a;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.know-more-btn:hover {
+  background-color: #5c2830;
+  transform: translateY(-2px);
+}
+
+/* Animation for the welcome text */
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+}
+
 
 
 
