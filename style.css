@@ -717,7 +717,36 @@ form button:hover {
 .back-arrow:hover {
   color: #b2556d;
 }
+   /* Footer Styling Fix */
+footer {
+  background-color: #f8dce4;
+  padding: 20px 0;
+  text-align: center;
+  color: #5b2a3a;
+  font-size: 14px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
+
+footer a {
+  color: #5b2a3a;  /* dark color for visibility */
+  margin: 0 12px;
+  font-size: 22px;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #a45068; /* subtle hover effect */
+}
+
+footer p {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #5b2a3a;
+}
+}
+
 
 
 
