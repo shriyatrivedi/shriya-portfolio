@@ -701,7 +701,24 @@ form button:hover {
   transform: scale(1.1);
   transition: 0.2s ease;
 }
+   /* Minimal back arrow - same as Education page */
+.back-arrow {
+  font-size: 22px;
+  color: #8b3a4b;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 20px;
+  margin-top: 25px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
 }
+
+.back-arrow:hover {
+  color: #b2556d;
+}
+}
+
 
 
 
